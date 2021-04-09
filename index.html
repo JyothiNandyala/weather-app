@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlVBGPNblse1Xqq9wj5evXANEmrjrnywY&libraries=&v=weekly"
+      defer
+    ></script>
+    <title>Weather API</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Forecast</h1>
+    </header>
+    <nav>
+      <input
+        type="text"
+        id="input_tag"
+        name="text"
+        placeholder="please write the city name"
+      />
+      <button id="button">Check The Weather</button>
+      <button id="button2">Check With Current Position</button>
+    </nav>
+    <section>
+      <div id="city">
+        <p></p>
+      </div>
+      <div id="temperature">
+        <img id="temp_icon" src="" alt="" />
+        <p><span id="temp_value"></span><span id="temp_unit"></span></p>
+      </div>
+      <div id="climate">
+        <p></p>
+      </div>
+
+      <div id="wind_speed">
+        <p></p>
+      </div>
+
+      <div id="sunrise">
+        <p></p>
+      </div>
+
+      <div id="sunset">
+        <p></p>
+      </div>
+      <h2 id="error_message"></h2>
+      <div id="map"></div>
+    </section>
+
+    <div id="load_screen">
+      <div id="loading">Loading The Weather Information</div>
+    </div>
+
+    <footer>
+      <p>copyright &copy;2021, developed by JyothiNandyala</p>
+    </footer>
+    <script src="weather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+* {
+  font-family: "Rimouski";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 80px;
+
+  background-color: blanchedalmond;
+}
+header h1 {
+  padding-top: 20px;
+
+  margin-bottom: 50px;
+  text-align: center;
+  color: red;
+  font-style: oblique;
+  font-size: 40px;
+  text-decoration: bisque;
+}
+body {
+  background-color: skyblue;
+  background-image: url(https://www.almanac.com/sites/default/files/image_nodes/rainbow-weather.jpg);
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding: 30px;
+}
+#input_tag {
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  background-color: yellowgreen;
+}
+#button,
+#button2 {
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  background-color: yellowgreen;
+}
+section {
+  padding: 0px;
+}
+#temperature {
+  text-align: center;
+}
+#temperature #temp_value {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#temp_icon {
+  width: 20%;
+  height: 100px;
+}
+#city {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: red;
+}
+
+#climate,
+#wind_speed,
+#sunrise,
+#sunset {
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 2rem;
+  color: black;
+}
+#error_message {
+  text-align: center;
+  color: red;
+}
+div#load_screen {
+  background: #000;
+  opacity: 1;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 1600px;
+}
+div#load_screen > div#loading {
+  color: #fff;
+  width: 120px;
+  height: 24px;
+  margin: 300px auto;
+}
+#map {
+  width: 300px;
+  height: 180px;
+  border: 2px solid black;
+  margin: 0px 0px 50px 500px;
+
+  padding-bottom: 40px;
+}
+/* footer*/
+
+footer {
+  text-align: center;
+  background-color: blanchedalmond;
+  padding: 30px;
+}
+footer p {
+  font-size: 20px;
+}
+/*Responsive Design*/
+@media (max-width: 640px) {
+  nav {
+    display: block;
+    margin: 20px 10px 10px 70px;
+
+    padding: 10px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  div#load_screen > div#loading {
+    margin: 100px auto;
+  }
+  #map {
+    width: 300px;
+    height: 180px;
+    border: 2px solid black;
+    margin: 50px;
+
+    padding-bottom: 40px;
+  }
+}
